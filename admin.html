@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin | SUBA EFX</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+
+    <aside class="sidebar">
+
+        <div class="admin-logo">
+
+            <img src="IMG-20260710-WA0018 (1).jpg">
+
+            <h2>SUBA EFX</h2>
+
+        </div>
+
+
+        <button data-section="dashboard">
+            Dashboard
+        </button>
+
+
+        <button data-section="addMusic">
+            Add Music
+        </button>
+
+
+        <button data-section="addRingtone">
+            Add Ringtone
+        </button>
+
+
+        <button data-section="updates">
+            Daily Updates
+        </button>
+
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <main class="admin-main">
+
+
+        <div class="admin-topbar">
+
+            <h1>Admin Dashboard</h1>
+
+        </div>
+
+
+        <section
+            id="dashboard"
+            class="admin-section">
+
+            <h2>Welcome SUBA BGM Admin</h2>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <h3 id="musicCount">
+                        0
+                    </h3>
+
+                    <p>Music</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3 id="ringtoneCount">
+                        0
+                    </h3>
+
+                    <p>Ringtones</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+  <section
+    id="addMusic"
+    class="admin-section hidden">
+
+    <h2>Add New Music</h2>
+
+      <input
+        type="text"
+        id="musicName"
+        placeholder="Music Name">
+
+       <input
+        type="file"
+        id="musicPhoto"
+        accept="image/*">
+
+       <input
+        type="file"
+        id="musicFile"
+        accept="audio/*">
+
+    <button id="addMusicBtn">
+
+        Add Music
+
+    </button>
+
+   </section>
+
+        </section>
+
+
+        <section
+    id="addRingtone"
+    class="admin-section hidden">
+
+    <h2>Add New Ringtone</h2>
+
+    <input
+        type="text"
+        id="ringtoneName"
+        placeholder="Ringtone Name">
+
+    <input
+        type="file"
+        id="ringtonePhoto"
+        accept="image/*">
+
+    <input
+        type="file"
+        id="ringtoneFile"
+        accept="audio/*">
+
+    <button id="addRingtoneBtn">
+
+        Add Ringtone
+
+    </button>
+
+</section>
+
+        <section
+            id="updates"
+            class="admin-section hidden">
+
+            <h2>Daily Updates</h2>
+
+            <div id="adminItems"></div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

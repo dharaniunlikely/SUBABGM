@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 25px 15px;
+    background: #111;
+    border-right: 1px solid #292929;
+}
+
+.admin-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-logo img {
+    width: 65px;
+}
+
+.admin-logo h2 {
+    color: #ff2d75;
+    margin-top: 10px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1b1b1b;
+    color: white;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #ff2d75;
+}
+
+.admin-main {
+    flex: 1;
+    padding: 30px;
+}
+
+.admin-topbar {
+    border-bottom: 1px solid #292929;
+    padding-bottom: 20px;
+}
+
+.admin-topbar h1 {
+    color: #ff2d75;
+}
+
+.admin-section {
+    padding-top: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 30px;
+
+    background: #151515;
+
+    border: 1px solid #292929;
+    border-radius: 15px;
+}
+
+.stat-card h3 {
+    font-size: 40px;
+    color: #00e5ff;
+}
+
+.admin-section input {
+    display: block;
+
+    width: 100%;
+    max-width: 600px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background: #151515;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.admin-section button {
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff2d75;
+    color: white;
+
+    cursor: pointer;
+}
+
+.admin-item {
+    max-width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background: #151515;
+
+    border: 1px solid #292929;
+    border-radius: 10px;
+}
+
+.delete-btn {
+    background: #e00052 !important;
+}
+
+@media (max-width: 700px) {
+
+    .admin-container {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar button {
+        width: auto;
+        display: inline-block;
+    }
+
+    .admin-main {
+        padding: 18px;
+    }
+
+}
