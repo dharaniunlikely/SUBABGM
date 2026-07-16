@@ -329,50 +329,5 @@ document.addEventListener(
             });
 
 
-        }
-    
-
+    }
 );
-card.innerHTML = `
-
-    <img
-        src="${item.photoURL}"
-        class="song-photo"
-        alt="${item.name}">
-
-    <div class="music-info">
-
-        <h3>
-
-            ${
-                item.type === "music"
-                    ? "Music"
-                    : "Ringtone"
-            }
-
-            - ${item.name}
-
-        </h3>
-
-        <p>
-
-            Updated:
-            ${item.date}
-
-        </p>
-
-    </div>
-
-    <audio controls>
-
-        <source src="${item.url}">
-
-    </audio>
-
-    <button class="download-btn">
-
-        Download
-
-    </button>
-
-`;
